@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,700');
+
 @import './styles/utility.scss';
 @import './styles/variables.scss';
 
@@ -10,7 +12,8 @@ body,
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
 }
 
 .app {

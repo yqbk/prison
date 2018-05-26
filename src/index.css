@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,700");
 .flex {
   display: flex; }
   .flex--aic {
@@ -17,7 +18,8 @@ body,
   /* needed for proper layout */ }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px; }
 
 .app {
   display: flex;

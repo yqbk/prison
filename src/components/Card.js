@@ -330,7 +330,7 @@ export default class Card extends React.Component {
       >
         <img className="card__img" src={photo} />
         <div className="card__text">
-          {name.toUpperCase()}
+          {name}
           {`, `}
           {location}
         </div>
