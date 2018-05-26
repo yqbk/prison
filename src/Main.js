@@ -7,21 +7,34 @@ import Card from './components/Card';
 import './styles/footer.css';
 
 class Main extends React.Component {
-  componentDidMount() {
-    this.props.getPeople();
-  }
+    componentDidMount() {
+        this.props.getPeople();
+        this.props.setCurrentIndex(0)
+    }
 
-  render() {
-    let box = this.props.people.map((item, i) => {
-      return <Card key={i} no={i} data={item} />;
-    });
-    return (
-      <Fragment>
-        {box}
-        <Footer />
-      </Fragment>
-    );
-  }
+    render() {
+        let { currentIndex, removeCard } = this.props;
+
+
+        let box = this.props.people.reverse().map((item, i) => {
+            return (
+                <Card
+                    key={i}
+                    no={i}
+                    data={item}
+                    setCurrentIndex={(i) => this.props.setCurrentIndex(i)}
+                    removeCard={() => removeCard()}
+                    currentIndex={currentIndex}
+                />
+            );
+        });
+        return (
+            <Fragment>
+                {box}
+                <Footer currentIndex={currentIndex} />
+            </Fragment>
+        );
+    }
 }
 
-export default connect('people', actions)(Main);
+export default connect(['people', 'currentIndex'], actions)(Main);
