@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import { connect } from 'unistore/react';
 import actions from './actions/actions';
 
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Card from './components/Card';
+import './styles/footer.css';
 
 class Main extends React.Component {
   componentDidMount() {

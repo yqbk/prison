@@ -19,7 +19,6 @@ export default () => (
           <Route exact path="/" component={Main} />
           <Route path="/chat" component={Chat} />
         </main>
-        <Footer />
       </div>
     </Router>
   </Provider>

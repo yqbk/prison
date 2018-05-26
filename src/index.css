@@ -23,9 +23,10 @@ body {
   overflow: hidden; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
   a:visited {
-    color: #000; }
+    color: white; }
 
 .app {
   display: flex;
@@ -39,7 +40,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #1d212b;
   margin: 0.3rem; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
@@ -48,14 +49,14 @@ main {
     font-size: 32px;
     background: none; }
   .btn--info, .btn--round {
-    border: 10px solid #ccc;
+    border: 10px solid #313b4f;
     border-radius: 50%;
     line-height: 0; }
   .btn--info {
     height: 7vh;
     width: 7vh;
     padding-bottom: 10px;
-    font-size: 48px; }
+    font-size: 24px; }
   .btn--round {
     height: 10vh;
     width: 10vh;
