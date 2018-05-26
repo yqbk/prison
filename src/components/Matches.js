@@ -11,10 +11,10 @@ class Matches extends React.Component {
 
   render() {
     let matches = this.props.matches.map((item, i) => {
-      return <Item item={item} key={i} />;
+      return <Item item={item} messages={this.props.messages} key={i} />;
     });
     return <Fragment>{matches}</Fragment>;
   }
 }
 
-export default connect('matches', actions)(Matches);
+export default connect(['matches'], actions)(Matches);

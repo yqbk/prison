@@ -8,7 +8,7 @@ export default () => (
   <header className="flex flex--aic flex--jsb">
     <button className="btn btn--top">⚙️</button>
     <Link to="/">
-      <h1>TRISON</h1>
+      <h1>PRIMATE</h1>
     </Link>
     <Link to="/matches" className="btn btn--top">
       💬
