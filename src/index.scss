@@ -16,9 +16,16 @@ body {
   letter-spacing: 1px;
 }
 
+a {
+  text-decoration: none;
+  &:visited {
+    color: $black;
+  }
+}
+
 .app {
   display: flex;
-  background-color: #000;
+  background-color: $black;
   flex-direction: column;
 }
 
