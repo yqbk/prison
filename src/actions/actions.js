@@ -36,9 +36,25 @@ let actions = store => ({
     },
 
     like: (state, id) => {
+        const result = {
+            ...state,
+            matches: [...state.matches, state.people.find(prisoner => prisoner.id === id)],
+            currentIndex: state.currentIndex + 1
+            // currentIndex: state.people
+            //     .map((prisoner, index) => prisoner.id)
+            //     .slice(state.setCurrentIndex, state.currentIndex + 1)
+            //     .pop()
+        };
+
+        console.log('teest', id, result.currentIndex);
+
+        return result;
+    },
+
+    dislike: (state, id) => {
         return {
             ...state,
-            matches: [...state.matches, state.people.find(prisoner => prisoner.id === id)]
+            currentIndex: state.currentIndex + 1
         };
     },
 

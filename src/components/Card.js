@@ -26,7 +26,7 @@ export default class Card extends React.Component {
             mass: 0.7,
             damping: 0.8
         };
-        this.handleDown = this.handleDown.bind(this);
+        this.handleDown = this.handleDown.bind(this)
         this.handleUp = this.handleUp.bind(this);
         this.handleMove = this.handleMove.bind(this);
         this.animate = this.animate.bind(this);
@@ -38,6 +38,14 @@ export default class Card extends React.Component {
 
     componentDidMount() {
         this.animate();
+    }
+
+    shouldComponentUpdate(prevProps, prevState) {
+      if (this.state.move) {
+        return true
+      }
+
+      return false
     }
 
     handleDown(e) {
@@ -102,7 +110,7 @@ export default class Card extends React.Component {
                     }
                     console.log('prawo');
                     // this.props.removeCard(this.props.currentIndex);
-                    this.props.setCurrentIndex(this.props.currentIndex + 1);
+                    // this.props.setCurrentIndex(this.props.currentIndex + 1);
                     this.props.like()
 
 
@@ -138,7 +146,8 @@ export default class Card extends React.Component {
                     }
                     console.log('lewo');
                     // this.props.removeCard(this.props.currentIndex);
-                    this.props.setCurrentIndex(this.props.currentIndex + 1);
+                    // this.props.setCurrentIndex(this.props.currentIndex + 1);
+                    this.props.dislike()
 
                     let limit = true;
                     let move = false;
@@ -308,8 +317,14 @@ export default class Card extends React.Component {
     }
 
     render() {
-        const { name, location, photo } = this.props.data;
+        const { name, location, photo, id } = this.props.data;
 
+        // if(this.props.currentIndex !==  id) {
+        //   return null
+        // }
+
+
+        // console.log("this.props.data.photo", this.props.data.photo);
         return (
             <div
                 id={'card' + this.props.no}

@@ -21,7 +21,7 @@ const Footer = ({ currentIndex }) => {
         <footer className="flex flex--aic flex--jcc">
             <button className="btn btn--round">🙅‍♂️</button>
             <button className="btn btn--info">ℹ️</button>
-            <button className="btn btn--round" onClick={() => this.props.like(currentIndex)}>
+            <button className="btn btn--round">
                 ❤️
             </button>
         </footer>
