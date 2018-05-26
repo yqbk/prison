@@ -5,57 +5,57 @@
 html,
 body,
 .app {
-  margin: 0;
-  height: 100vh; /* needed for proper layout */
+    margin: 0;
+    height: 100vh; /* needed for proper layout */
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .app {
-  display: flex;
-  background-color: #000;
-  flex-direction: column;
+    display: flex;
+    background-color: darken(#252b37, 4%);
+    flex-direction: column;
 }
 
 main {
-  flex: 1;
+    flex: 1;
 }
 
 // Buttons
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  margin: 0;
-  &:hover,
-  &:active,
-  &:focus {
-    outline: none;
-  }
-  &--top {
-    border: none;
-    font-size: 32px;
-    background: none;
-  }
-  &--info,
-  &--round {
-    border: 10px solid #ccc;
-    border-radius: 50%;  
-    line-height: 0;  
-  }
-  &--info {
-    height: 70px;
-    width: 70px;
-    padding-bottom: 10px;
-    font-size: 48px;
-  }
-  &--round {
-    height: 100px;
-    width: 100px;
-    font-size: 54px;
-    padding-top: 10px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0;
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &--top {
+        border: none;
+        font-size: 32px;
+        background: none;
+    }
+    &--info,
+    &--round {
+        border: 10px solid #ccc;
+        border-radius: 50%;
+        line-height: 0;
+    }
+    &--info {
+        height: 70px;
+        width: 70px;
+        padding-bottom: 10px;
+        font-size: 48px;
+    }
+    &--round {
+        height: 100px;
+        width: 100px;
+        font-size: 54px;
+        padding-top: 10px;
+    }
 }

@@ -17,20 +17,46 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #000; }
+  background-color: #151823; }
+  .card:after {
+    position: absolute;
+    content: '';
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0fffc1, #7e0fff);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite; }
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   .card__img {
     margin: 0 auto;
     width: 85%;
-    height: 85%;
+    height: 75%;
     border: 3px solid #b4c6d8;
     border-radius: 3px;
     user-select: none; }
   .card__text {
     text-align: center;
-    font-size: 28px;
-    font-weight: 900;
+    font-size: 20px;
+    font-family: monospace;
     font-style: italic;
     margin-top: 20px;
-    color: #b4c6d8;
+    color: #ffffff;
     -webkit-touch-callout: none;
     user-select: none; }

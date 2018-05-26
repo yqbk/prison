@@ -21,7 +21,7 @@ body {
 
 .app {
   display: flex;
-  background-color: #000;
+  background-color: #1d212b;
   flex-direction: column; }
 
 main {

@@ -1,39 +1,45 @@
+@import './mixins.scss';
+
 .card {
-  width: 300px;
-  height: 400px;
-  position: absolute;
-  border-radius: 10px;
-  padding: 5% auto;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transform-origin: center;
-  top: 0;
-  bottom: 0;
-  cursor: -webkit-grab;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(800px);
-  transform: perspective(800px);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #000;
-  &__img {
-    margin: 0 auto;
-    width: 85%;
-    height: 85%;
-    border: 3px solid #b4c6d8;
-    border-radius: 3px;
-    user-select: none;
-  }
-  &__text {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 900;
-    font-style: italic;
-    margin-top: 20px;
-    color: #b4c6d8;
-    -webkit-touch-callout: none;
-    user-select: none;
-  }
+    @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 5% auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform-origin: center;
+    top: 0;
+    bottom: 0;
+    cursor: -webkit-grab;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(800px);
+    transform: perspective(800px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // background-color: #000;
+    // color: #252b37;
+    background-color: #151823;
+    &__img {
+        margin: 0 auto;
+        width: 85%;
+        height: 75%;
+        border: 3px solid #b4c6d8;
+        border-radius: 3px;
+        user-select: none;
+    }
+    &__text {
+        text-align: center;
+        font-size: 20px;
+        font-family: monospace;
+        // font-weight: 900;
+        font-style: italic;
+        margin-top: 20px;
+        color: #ffffff;
+        -webkit-touch-callout: none;
+        user-select: none;
+    }
 }
