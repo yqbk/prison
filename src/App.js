@@ -1,48 +1,21 @@
-import React, { Component, Fragment } from 'react';
-import Swiper from 'react-native-deck-swiper';
-import styled from 'styled-components';
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
-    constructor() {
-        super(props);
-
-        this.state = {};
-    }
-    render() {
-        return (
-            <Fragment>
-                {' '}
-                <Swiper
-                    cards={['DO', 'MORE', 'OF', 'WHAT', 'MAKES', 'YOU', 'HAPPY']}
-                    renderCard={card => {
-                        return (
-                            <View style={styles.card}>
-                                <Text style={styles.text}>{card}</Text>
-                            </View>
-                        );
-                    }}
-                    onSwiped={cardIndex => {
-                        console.log(cardIndex);
-                    }}
-                    onSwipedAll={() => {
-                        console.log('onSwipedAll');
-                    }}
-                    cardIndex={0}
-                    backgroundColor={'#4FD0E9'}
-                    stackSize={3}
-                >
-                    <Button
-                        onPress={() => {
-                            console.log('oulala');
-                        }}
-                        title="Press me"
-                    >
-                        You can press me
-                    </Button>
-                </Swiper>
-            </Fragment>
-        );
-    }
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
 }
 
 export default App;
