@@ -2,7 +2,9 @@ import createStore from 'unistore';
 
 let initialState = {
   people: [],
-  matches: []
+  matches: [],
+  messages: [],
+  totalMessages: 0
 };
 
 export let store = createStore(initialState);
