@@ -319,7 +319,7 @@ export default class Card extends React.Component {
     return (
       <div
         id={'card' + this.props.no}
-        className="card color"
+        className="card"
         onMouseDown={this.handleDown}
         onMouseMove={this.handleMove}
         onMouseUp={this.handleUp}
@@ -328,8 +328,8 @@ export default class Card extends React.Component {
         onTouchMove={this.handleTouchMove}
         onTouchEnd={this.handleTouchEnd}
       >
-        <img className="profile-image" src={photo} />
-        <div className="text">
+        <img className="card__img" src={photo} />
+        <div className="card__text">
           {name.toUpperCase()}
           {`, `}
           {location}

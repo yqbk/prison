@@ -1,53 +1,39 @@
 .card {
-    width: 300px;
-    height: 400px;
-    position: absolute;
-    border-radius: 10px;
-    padding: 5% auto;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform-origin: center;
-    top: 0;
-    bottom: 0;
-    cursor: -webkit-grab;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: perspective(800px);
-    transform: perspective(800px);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #000;
-}
-
-.profile-image {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  border-radius: 10px;
+  padding: 5% auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform-origin: center;
+  top: 0;
+  bottom: 0;
+  cursor: -webkit-grab;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(800px);
+  transform: perspective(800px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  &__img {
     margin: 0 auto;
     width: 85%;
     height: 85%;
     border: 3px solid #b4c6d8;
     border-radius: 3px;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
     user-select: none;
-}
-
-.text {
+  }
+  &__text {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 900;
     font-style: italic;
     margin-top: 20px;
     color: #b4c6d8;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+  }
 }
-
-

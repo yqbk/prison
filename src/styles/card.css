@@ -11,7 +11,6 @@
   top: 0;
   bottom: 0;
   cursor: -webkit-grab;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform: perspective(800px);
   transform: perspective(800px);
@@ -19,30 +18,19 @@
   justify-content: center;
   flex-direction: column;
   background-color: #000; }
-
-.profile-image {
-  margin: 0 auto;
-  width: 85%;
-  height: 85%;
-  border: 3px solid #b4c6d8;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none; }
-
-.text {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  font-style: italic;
-  margin-top: 20px;
-  color: #b4c6d8;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  .card__img {
+    margin: 0 auto;
+    width: 85%;
+    height: 85%;
+    border: 3px solid #b4c6d8;
+    border-radius: 3px;
+    user-select: none; }
+  .card__text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 20px;
+    color: #b4c6d8;
+    -webkit-touch-callout: none;
+    user-select: none; }
