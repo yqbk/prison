@@ -7,7 +7,7 @@ import actions from './../actions/actions';
 const handleLike = currentIndex => {
     console.log('currentIndex', currentIndex);
 
-    actions.like();
+    this.props.like(currentIndex);
 
     return currentIndex;
 };
@@ -16,12 +16,14 @@ const handleLike = currentIndex => {
 //     return;
 // };
 
-const Footer = ({ currentIndex }) => {
+const Footer = ({ currentIndex, like, dislike }) => {
     return (
         <footer className="flex flex--aic flex--jcc">
-            <button className="btn btn--round">🙅‍♂️</button>
+            <button className="btn btn--round" onClick={dislike}>
+                🙅‍♂️
+            </button>
             <button className="btn btn--info">ℹ️</button>
-            <button className="btn btn--round">
+            <button className="btn btn--round" onClick={like}>
                 ❤️
             </button>
         </footer>

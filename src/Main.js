@@ -15,7 +15,9 @@ class Main extends React.Component {
     render() {
         let { currentIndex, removeCard } = this.props;
 
-        console.log('currenIndex', currentIndex);
+        // console.log('currenIndex', currentIndex);
+
+        // this.props.setCurrentIndex(item.id);
 
         let box = this.props.people.reverse().map((item, i) => {
             return (
@@ -34,7 +36,11 @@ class Main extends React.Component {
         return (
             <Fragment>
                 {box}
-                <Footer currentIndex={currentIndex} />
+                <Footer
+                    currentIndex={currentIndex}
+                    like={() => this.props.like(currentIndex)}
+                    dislike={() => this.props.dislike(currentIndex)}
+                />
             </Fragment>
         );
     }
