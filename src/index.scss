@@ -56,7 +56,7 @@ main {
         font-size: 36px;
         cursor: pointer;
         &:hover {
-            background-color: lighten(rgb(66, 66, 66), 10%);
+            background-color: rgb(66, 66, 66);
         }
     }
     &--top {

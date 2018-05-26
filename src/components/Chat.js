@@ -96,7 +96,7 @@ class Chat extends React.Component {
     return (
       <Fragment>
         <ul className="chat">{renderMessages()}</ul>
-        <ul className="choices">{renderChoices()}</ul>
+        <ul className="choices flex flex--aic flex--jsb">{renderChoices()}</ul>
       </Fragment>
     );
   }
