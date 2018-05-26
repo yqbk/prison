@@ -15,6 +15,32 @@ body {
     overflow: hidden;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: brown;
+}
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+    border: #b4c6d8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
 .card {
     width: 300px;
     height: 400px;
