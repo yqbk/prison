@@ -9,12 +9,11 @@ import './styles/footer.css';
 class Main extends React.Component {
     componentDidMount() {
         this.props.getPeople();
-        this.props.setCurrentIndex(0)
+        this.props.setCurrentIndex(0);
     }
 
     render() {
         let { currentIndex, removeCard } = this.props;
-
 
         let box = this.props.people.reverse().map((item, i) => {
             return (
@@ -22,9 +21,10 @@ class Main extends React.Component {
                     key={i}
                     no={i}
                     data={item}
-                    setCurrentIndex={(i) => this.props.setCurrentIndex(i)}
-                    removeCard={() => removeCard()}
+                    setCurrentIndex={i => this.props.setCurrentIndex(i)}
+                    // removeCard={() => removeCard()}
                     currentIndex={currentIndex}
+                    like={() => this.props.like(currentIndex) }
                 />
             );
         });

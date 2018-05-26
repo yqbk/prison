@@ -101,7 +101,10 @@ export default class Card extends React.Component {
                         restY = this.state.Posy * 5;
                     }
                     console.log('prawo');
+                    // this.props.removeCard(this.props.currentIndex);
                     this.props.setCurrentIndex(this.props.currentIndex + 1);
+                    this.props.like()
+
 
                     let limit = true;
                     let move = false;
@@ -120,7 +123,7 @@ export default class Card extends React.Component {
                             }, 10);
                         }
                     );
-                    this.props.removeCard();
+                    // this.props.removeCard();
                 } else if (mouseCurrPosX < width * 20 / 100) {
                     let restX, restY;
                     if (mouseCurrPosX > width / 2) {
@@ -134,7 +137,9 @@ export default class Card extends React.Component {
                         restY = this.state.Posy * 5;
                     }
                     console.log('lewo');
-                    this.props.removeCard();
+                    // this.props.removeCard(this.props.currentIndex);
+                    this.props.setCurrentIndex(this.props.currentIndex + 1);
+
                     let limit = true;
                     let move = false;
                     let damping = 0.06;

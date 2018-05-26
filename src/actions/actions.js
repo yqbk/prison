@@ -1,4 +1,4 @@
-let URL = 'http://demo6315956.mockable.io';
+let URL = 'http://demo9367428.mockable.io';
 
 let actions = store => ({
     // Async actions can be pure async/promise functions:
@@ -9,17 +9,19 @@ let actions = store => ({
 
     async getMatches(state) {
         let res = await fetch(`${URL}/matches`);
-        return { matches: await res.json() };
+        console.log('matches 2 ', state.matches);
+        return state.matches.length ? state.matches : { matches: await res.json() };
     },
 
     setCurrentIndex: (state, index) => {
-        console.log('ustawiam index', index);
-        return { currentIndex: index };
+        return { ...state, currentIndex: index };
+    },
+
+    like: (state, id) => {
+        return { ...state, matches: [...state.matches, state.people.find(prisoner => prisoner.id === id)] };
     },
 
     removeCard: state => {
-        console.log('usuwam karte', state.people.length);
-
         return { ...state, people: state.people.slice(1) };
     }
 });
