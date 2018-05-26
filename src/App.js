@@ -15,8 +15,10 @@ export default () => (
     <Router>
       <div className="app">
         <Header />
-        <Route exact path="/" component={Main} />
-        <Route path="/chat" component={Chat} />
+        <main>
+          <Route exact path="/" component={Main} />
+          <Route path="/chat" component={Chat} />
+        </main>
         <Footer />
       </div>
     </Router>

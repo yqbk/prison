@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'unistore/react';
 import actions from './actions/actions';
 
@@ -53,7 +53,7 @@ class Main extends React.Component {
     var box = this.state.data.map((item, i) => {
       return <Card key={i} no={i} data={item} />;
     });
-    return <main>{box}</main>;
+    return <Fragment>{box}</Fragment>;
   }
 }
 
