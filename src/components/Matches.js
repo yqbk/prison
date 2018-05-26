@@ -10,8 +10,6 @@ class Matches extends React.Component {
   }
 
   render() {
-    console.log('render matches', this.props.matches);
-
     let matches = this.props.matches.map((item, i) => {
       return <Item item={item} key={i} />;
     });

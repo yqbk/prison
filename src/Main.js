@@ -9,7 +9,6 @@ import './styles/footer.css';
 class Main extends React.Component {
     componentDidMount() {
         this.props.getPeople();
-        this.props.setCurrentIndex(0);
     }
 
     render() {
