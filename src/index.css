@@ -28,7 +28,7 @@ a {
 
 .app {
   display: flex;
-  background-color: #000;
+  background-color: #1d212b;
   flex-direction: column; }
 
 main {
@@ -39,7 +39,7 @@ main {
   justify-content: center;
   align-items: center;
   background: white;
-  margin: 0; }
+  margin: 0.3rem; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn--top {
@@ -51,12 +51,12 @@ main {
     border-radius: 50%;
     line-height: 0; }
   .btn--info {
-    height: 70px;
-    width: 70px;
+    height: 7vh;
+    width: 7vh;
     padding-bottom: 10px;
     font-size: 48px; }
   .btn--round {
-    height: 100px;
-    width: 100px;
-    font-size: 54px;
+    height: 10vh;
+    width: 10vh;
+    font-size: 42px;
     padding-top: 10px; }
