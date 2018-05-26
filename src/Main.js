@@ -52,7 +52,25 @@ class Main extends React.Component {
         var box = this.state.data.map((item, i) => {
             return <Card key={i} no={i} data={item} />;
         });
-        return <div className="app">{box}</div>;
+        return (
+            <div className="app">
+                <div className="container">
+                    {box}
+                    <div className="buttons">
+                        <img
+                            className="button"
+                            src="https://image.flaticon.com/icons/svg/196/196587.svg"
+                            alt="alt image"
+                        />
+                        <img
+                            className="button"
+                            src="https://www.shareicon.net/data/128x128/2016/05/20/767751_button_512x512.png"
+                            alt="image"
+                        />
+                    </div>
+                </div>
+            </div>
+        );
     }
 }
 
