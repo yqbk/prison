@@ -25,8 +25,7 @@ body {
     padding-bottom: 5%;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     transform-origin: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -39,6 +38,9 @@ body {
     transform: perspective(800px);
     align-content: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .color {
     /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
@@ -46,14 +48,16 @@ body {
 }
 
 .profile-image {
-    margin: auto;
+    margin: 0 auto;
     width: 85%;
     height: 85%;
     border: 3px solid #b4c6d8;
-    background-image: url('https://vignette.wikia.nocookie.net/avatar/images/9/97/Scary_prisoner.png/revision/latest?cb=20140215112602');
-    /* background-repeat: no-repeat; */
-    background-position: center top;
-    /* background-attachment: fixed; */
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .text {
