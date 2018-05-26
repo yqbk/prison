@@ -19,8 +19,9 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
   &:visited {
-    color: $black;
+    color: white;
   }
 }
 
@@ -39,7 +40,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: darken(#252b37, 4%);
     margin: 0.3rem;
     &:hover,
     &:active,
@@ -53,7 +54,7 @@ main {
     }
     &--info,
     &--round {
-        border: 10px solid #ccc;
+        border: 10px solid darken(#39445c, 4%);
         border-radius: 50%;
         line-height: 0;
     }
@@ -61,7 +62,7 @@ main {
         height: 7vh;
         width: 7vh;
         padding-bottom: 10px;
-        font-size: 48px;
+        font-size: 24px;
     }
     &--round {
         height: 10vh;
