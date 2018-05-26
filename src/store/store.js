@@ -1,3 +1,8 @@
 import createStore from 'unistore';
 
-export let store = createStore({ count: 0 });
+let initialState = {
+  people: [],
+  matches: []
+};
+
+export let store = createStore(initialState);

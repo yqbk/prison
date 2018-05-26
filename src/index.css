@@ -19,7 +19,8 @@ body,
 
 body {
   font-family: 'Nunito', sans-serif;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  overflow: hidden; }
 
 a {
   text-decoration: none; }

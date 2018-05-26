@@ -14,6 +14,7 @@ body,
 body {
     font-family: 'Nunito', sans-serif;
     letter-spacing: 1px;
+    overflow: hidden;
 }
 
 a {
@@ -24,15 +25,9 @@ a {
 }
 
 .app {
-<<<<<<< HEAD
-  display: flex;
-  background-color: $black;
-  flex-direction: column;
-=======
     display: flex;
     background-color: darken(#252b37, 4%);
     flex-direction: column;
->>>>>>> c0960f151b9ccf4c9b607fd51a94fc9367d8ed90
 }
 
 main {
