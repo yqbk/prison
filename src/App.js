@@ -4,7 +4,6 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { store } from './store/store';
 // Components
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Chat from './components/Chat';
 import Main from './Main';
 // Styles

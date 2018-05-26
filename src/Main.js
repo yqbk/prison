@@ -15,7 +15,12 @@ class Main extends React.Component {
     let box = this.props.people.map((item, i) => {
       return <Card key={i} no={i} data={item} />;
     });
-    return <Fragment>{box}</Fragment>;
+    return (
+      <Fragment>
+        {box}
+        <Footer />
+      </Fragment>
+    );
   }
 }
 
