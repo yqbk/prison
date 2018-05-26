@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { connect } from 'unistore/react';
 import actions from '../actions/actions';
 
-import ListItem from './ListItem';
+import Item from './Item';
 
 class Chat extends React.Component {
   componentDidMount() {
@@ -10,10 +10,10 @@ class Chat extends React.Component {
   }
 
   render() {
-    let box = this.props.matches.map((item, i) => {
-      return <h1>{item.name}</h1>;
+    let matches = this.props.matches.map((item, i) => {
+      return <Item item={item} key={i} />;
     });
-    return <Fragment>{box}</Fragment>;
+    return <Fragment>{matches}</Fragment>;
   }
 }
 

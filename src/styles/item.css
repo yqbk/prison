@@ -1,0 +1,13 @@
+.item {
+  padding: 20px; }
+  .item__img {
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; }
+  .item__info {
+    font-size: 20px; }
+    .item__info p {
+      margin: 0; }

@@ -9,6 +9,8 @@
     justify-content: space-between; }
   .flex--jcc {
     justify-content: center; }
+  .flex--fdc {
+    flex-direction: column; }
 
 html,
 body,
@@ -20,7 +22,8 @@ body,
 body {
   font-family: 'Nunito', sans-serif;
   letter-spacing: 1px;
-  overflow: hidden; }
+  overflow: hidden;
+  color: white; }
 
 a {
   text-decoration: none;

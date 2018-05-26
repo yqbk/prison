@@ -1,0 +1,17 @@
+.item {
+  padding: 20px;
+  &__img {
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  &__info {
+    font-size: 20px;
+    p {
+      margin: 0;
+    }
+  }
+}
