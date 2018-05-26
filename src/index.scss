@@ -48,6 +48,17 @@ main {
     &:focus {
         outline: none;
     }
+    &--full {
+        border: none;
+        width: 100%;
+        padding: 8px;
+        margin: 0;
+        font-size: 36px;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten(rgb(66, 66, 66), 10%);
+        }
+    }
     &--top {
         border: none;
         font-size: 32px;
