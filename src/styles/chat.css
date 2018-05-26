@@ -1,0 +1,11 @@
+.chat {
+  padding: 20px;
+  list-style: none; }
+
+.msg {
+  display: block;
+  font-size: 48px;
+  text-align: right;
+  width: 100%; }
+  .msg--mine {
+    text-align: left; }

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'unistore/react';
 import actions from '../actions/actions';
+import '../styles/chat.css';
 
 const MY_ID = 666;
 
@@ -19,14 +20,20 @@ class Chat extends React.Component {
       );
     });
     let renderMessages = () => {
+      conversation.sort((a, b) => {
+        a.timestamp < b.timestamp;
+      });
       return conversation.map((msg, i) => {
-        return <li key={i}>{msg.message}</li>;
+        return (
+          <li className={msg.from === MY_ID ? 'msg msg--mine' : 'msg'} key={i}>
+            {msg.message}
+          </li>
+        );
       });
     };
     return (
       <Fragment>
-        <p>{this.props.match.params.id}</p>
-        <ul>{renderMessages()}</ul>
+        <ul className="chat">{renderMessages()}</ul>
       </Fragment>
     );
   }
