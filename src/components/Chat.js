@@ -1,20 +1,9 @@
 import React, { Fragment } from 'react';
-import { connect } from 'unistore/react';
-import actions from '../actions/actions';
 
-import Item from './Item';
+let Chat = ({ match }) => (
+  <Fragment>
+    <h3>{match.params.id}</h3>
+  </Fragment>
+);
 
-class Chat extends React.Component {
-  componentDidMount() {
-    this.props.getMatches();
-  }
-
-  render() {
-    let matches = this.props.matches.map((item, i) => {
-      return <Item item={item} key={i} />;
-    });
-    return <Fragment>{matches}</Fragment>;
-  }
-}
-
-export default connect('matches', actions)(Chat);
+export default Chat;

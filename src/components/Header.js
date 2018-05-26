@@ -10,7 +10,7 @@ export default () => (
     <Link to="/">
       <h1>TRISON</h1>
     </Link>
-    <Link to="/chat" className="btn btn--top">
+    <Link to="/matches" className="btn btn--top">
       💬
     </Link>
   </header>

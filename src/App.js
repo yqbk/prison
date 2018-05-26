@@ -3,9 +3,10 @@ import { Provider } from 'unistore/react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { store } from './store/store';
 // Components
-import Header from './components/Header';
-import Chat from './components/Chat';
 import Main from './Main';
+import Chat from './components/Chat';
+import Header from './components/Header';
+import Matches from './components/Matches';
 // Styles
 import './index.css';
 
@@ -16,7 +17,8 @@ export default () => (
         <Header />
         <main>
           <Route exact path="/" component={Main} />
-          <Route path="/chat" component={Chat} />
+          <Route exact path="/matches" component={Matches} />
+          <Route path="/matches/:id" component={Chat} />
         </main>
       </div>
     </Router>
