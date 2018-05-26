@@ -314,12 +314,12 @@ export default class Card extends React.Component {
   }
 
   render() {
-    // const image =
-    const text = 'Josh, cell 12/32';
+    const { name, location, photo } = this.props.data;
+
     return (
       <div
         id={'card' + this.props.no}
-        className={'card color'}
+        className="card color"
         onMouseDown={this.handleDown}
         onMouseMove={this.handleMove}
         onMouseUp={this.handleUp}
@@ -328,8 +328,12 @@ export default class Card extends React.Component {
         onTouchMove={this.handleTouchMove}
         onTouchEnd={this.handleTouchEnd}
       >
-        <div className="profile-image" />
-        <div className="text">{text.toUpperCase()}</div>
+        <img className="profile-image" src={photo} />
+        <div className="text">
+          {name.toUpperCase()}
+          {`, `}
+          {location}
+        </div>
       </div>
     );
   }

@@ -9,6 +9,10 @@ body,
   height: 100vh; /* needed for proper layout */
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .app {
   display: flex;
   background-color: #000;
