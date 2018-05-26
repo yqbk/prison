@@ -50,6 +50,7 @@ class Chat extends React.Component {
       this.setState({
         responsesId: this.state.responsesId + 1
       });
+      if (this.state.responsesId > 2) this.setState({ responsesId: 0 });
     }, 2000);
   };
 
@@ -79,6 +80,7 @@ class Chat extends React.Component {
       let now = new Date();
       let timestamp = now.toUTCString();
       let id = this.props.match.params.id;
+      if (this.state.choicesId > 2) this.setState({ choicesId: 0 });
       return choices[this.state.choicesId].map((choice, i) => {
         return (
           <li className="choice" key={i}>
